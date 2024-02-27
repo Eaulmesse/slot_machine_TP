@@ -8,6 +8,9 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ColumnHandler {
 
     private List<String> colonne1;
@@ -38,14 +41,18 @@ public class ColumnHandler {
         this.colonne3 = colonne3;
     }
 
+    public Map<String, Integer> linkPositionToGain() {
+        Map<String, Integer> values = new HashMap<>();
 
+        values.put("7", 300);
+        values.put("BAR", 100);
+        values.put("R", 15);
+        values.put("P", 15);
+        values.put("T", 15);
+        values.put("C", 8);
 
-
-
-
-
-
-
+        return values;
+    }
 
     public void deserializeColumns() {
 
